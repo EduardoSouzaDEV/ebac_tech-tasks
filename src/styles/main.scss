@@ -1,5 +1,9 @@
 //Importação
-@use "hero";
+@use "./hero";
+@use "./componentes/info_hero";
+@use "./componentes/buttons";
+@use "./event";
+@use "./variables";
 
 //Config padrão
 * {
@@ -7,6 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    list-style: none;
+    color: variables.$textPrimory;
 }
 
 //Container responsivo
@@ -18,6 +24,7 @@
     @media (max-width: 640px) {
         max-width: 80%;
     }
+
 
     @media(max-width: 1024px) {
         max-width: 90%;
